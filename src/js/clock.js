@@ -11,17 +11,21 @@ function drawClock() {
 }
 
 function drawFace(ctx, radius) {
+  const img = document.getElementById("clockImg");
+  const pat = ctx.createPattern(img, "repeat");
   ctx.beginPath();
-  ctx.arc(0, 0, radius, 0, 2 * Math.PI);
-  ctx.fillStyle = "rgb(2,1,4)";
+  ctx.arc(0, 0, radius, 0, 2 * Math.PI, true);
+  ctx.fillStyle = pat;
   ctx.fill();
-  ctx.strokeStyle = "white";
+  ctx.strokeStyle = "black";
   ctx.lineWidth = radius * 0.01;
   ctx.stroke();
   ctx.beginPath();
 }
 
 function drawNumbers(ctx, radius) {
+  let ang;
+  let num;
   for (num = 1; num < 13; num++) {
     ang = (num * Math.PI) / 6;
     ctx.rotate(ang);
@@ -62,10 +66,6 @@ function drawHand(ctx, pos, length, width) {
   ctx.lineTo(0, -length);
   ctx.stroke();
   ctx.rotate(-pos);
-}
-
-function deldraw() {
-  canvas.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function draw(ctx, pos, length, width) {
