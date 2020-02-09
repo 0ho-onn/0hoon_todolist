@@ -1,0 +1,33 @@
+.todo {
+  display: flex;
+}
+
+.todo input {
+  width: 20vw;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0);
+  border-color: white;
+  font-size: 2vw;
+  border-radius: 1vw;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.todo-lists {
+  margin-left: 3vw;
+}
+
+.todo-lists h2 {
+  font-family: "Fredoka One", cursive;
+  font-size: 2vw;
+  color: white;
+}
+
+.todo-lists ul {
+  font-size: 2vw;
+  display: flex;
+  color: white;
+}

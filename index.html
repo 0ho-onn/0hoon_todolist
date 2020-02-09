@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>toDoList</title>
+  </head>
+  <body>
+    <div class="clock-set">
+      <canvas id="canvas"></canvas>
+      <div class="js-clock">
+        <h1>00:00</h1>
+      </div>
+      <img src="img/clockimg.JPG" id="clockImg" />
+    </div>
+    <div class="ask-name">
+      <form class="js-askName form">
+        <input class="inputName" type="text" placeholder="What is your name?" />
+      </form>
+      <ul class="nameTag"></ul>
+    </div>
+    <div class="todo">
+      <form action="" class="js-toDoForm">
+        <input type="text" placeholder="Add Task" />
+      </form>
+      <div class="todo-lists">
+        <h2>Pending</h2>
+        <ul class="js-toDoList"></ul>
+        <h2>Finished</h2>
+        <ul class="js-toDidList"></ul>
+      </div>
+    </div>
+    <span class="js-weather weather"></span>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/elecClock.js"></script>
+    <script src="src/js/username.js"></script>
+    <script src="src/js/toDoList.js"></script>
+    <script src="src/js/randomBgImg.js"></script>
+    <script src="src/js/weather.js"></script>
+  </body>
+</html>

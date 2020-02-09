@@ -1,0 +1,26 @@
+.clock-set {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-set {
+  margin-bottom: 10vh;
+}
+
+#canvas {
+  width: 100vw;
+  max-width: 500px;
+  height: auto;
+}
+#clockImg {
+  width: 0px;
+  height: 0px;
+}
+
+.js-clock {
+  font-size: 7vw;
+  font-family: "Fredoka One", cursive;
+  color: white;
+}
