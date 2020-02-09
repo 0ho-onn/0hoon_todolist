@@ -11,13 +11,11 @@ function drawClock() {
 }
 
 function drawFace(ctx, radius) {
-  const img = document.getElementById("clockImg");
-  const pat = ctx.createPattern(img, "repeat");
   ctx.beginPath();
-  ctx.arc(0, 0, radius, 0, 2 * Math.PI, true);
-  ctx.fillStyle = pat;
+  ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+  ctx.fillStyle = "rgb(2,1,4)";
   ctx.fill();
-  ctx.strokeStyle = "black";
+  ctx.strokeStyle = "white";
   ctx.lineWidth = radius * 0.01;
   ctx.stroke();
   ctx.beginPath();
